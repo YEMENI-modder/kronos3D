@@ -1171,7 +1171,7 @@ private fun KeyboardNudge(onDragDelta: (Float) -> Unit) {
                     ) { change, amount ->
                         change.consume()
                         lastY += amount.y
-                        onDragDelta(with(this) { amount.y.toDp().value.toInt() })
+                        onDragDelta(with(this) { amount.y.toDp().value })
                     }
                 },
             contentAlignment = Alignment.Center,
